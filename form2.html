@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        form{
+            margin: auto;
+            width: 450px;
+            padding: 20px;
+        }
+        input[type=text],input[type=email]{
+            width: 90%;
+            height: 25px;
+        }
+        input[type=text]:focus,input[type=email]:focus{
+            background-color: aquamarine;
+        }
+        fieldset{
+            border-color: #3428ff;
+        }
+
+        legend{
+            font-weight: bold;
+        }
+        button {
+            background-color: #3428ff;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+<form action="">
+    <fieldset>
+        <legend>Contact Us</legend>
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="name">Name *</label>
+        <input type="text" id="name" required="required">
+        <br>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" required="required">
+        <br>
+
+        <label for="message">Message</label><br>
+        <textarea name="" id="message" cols="40" rows="3"></textarea>
+        <br>
+
+    </fieldset>
+        <p>If you are not affiliated to a componay please skip the form below</p>
+
+        <fieldset>
+            <legend>Company Details</legend>
+
+            <label for="bname">Buisness Name</label>
+            <input type="text" id="bname">
+            <br>
+
+            <label for="phonenumber">Phone Number</label>
+            <input type="text" id="phonenumber">
+            <br>
+
+            <label for="website">Website url</label>
+            <input type="text" id="website">
+            <br><br>
+
+            <label for="topic">Topic</label>
+            <select name="" id="topic">
+
+                <option value="purchasea">Purchases</option>
+                <option value="retail">Retail</option>
+                <option value="serviceprovider">Service Provider</option>
+                <option value="manufacturing">Manufacturing</option>
+
+            </select>
+            <br><br>
+
+            <label for="message2">Message</label><br>
+            <textarea name="" id="message2" cols="40" rows="3"></textarea>
+
+        </fieldset>
+        <br>
+        <button>Send</button>
+
+</fieldset>
+
+</form>
+
+
+
+</body>
+</html>
